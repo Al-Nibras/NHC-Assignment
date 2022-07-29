@@ -18,7 +18,7 @@ export const api = axios.create({
 async function getNews(searchText) {
     console.log("Getting news ...");
 
-    const searchArea = "top-headlines"; // valid values: everything, top-headlines,
+    const searchArea = "everything"; // valid values: everything, top-headlines,
     const sortBy = "publishedAt"; // valid values: popularity, relevancy, publishedAt
 
     try {
