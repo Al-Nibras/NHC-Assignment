@@ -112,6 +112,8 @@ const NewsFeed = () => {
                                     if (text && text.length >= 2) {
                                         setIsSearching(true);
                                         searchNews(text, feedHandler);
+                                    } else {
+                                        feedHandler(null);
                                     }
                                 }}
                                 onCancel={() => feedHandler(null)}>
